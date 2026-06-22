@@ -1,22 +1,23 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
-import { defineConfig, globalIgnores } from 'eslint/config'
+// Vraj
 
-export default defineConfig([
-  globalIgnores(['dist']),
+export default [
   {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
+    ignores: ['dist', 'node_modules', '.git', '.next'],
+  },
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      globals: globals.browser,
+      ecmaVersion: 2020,
+      globals: {
+        console: 'readonly',
+        window: 'readonly',
+        document: 'readonly',
+      },
+    },
+    rules: {
+      'no-var': 'error',
+      'prefer-const': 'error',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
     },
   },
-])
+];

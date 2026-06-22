@@ -1,0 +1,21 @@
+# Ignore artifacts
+dist
+coverage
+node_modules
+
+# Ignore all files by default
+**/*
+
+# Except these files
+!src/
+!*.ts
+!*.tsx
+!*.js
+!*.jsx
+!*.json
+!*.md
+!*.css
+!*.scss
+
+src/**/*.test.ts
+src/**/*.test.tsx

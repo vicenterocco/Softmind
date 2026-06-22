@@ -1,9 +1,12 @@
-// auth.ts
+// Vraj
+
 export interface User {
   id: string;
   email: string;
   name: string;
+  avatar?: string;
   createdAt: Date;
+  role: 'user' | 'admin' | 'professional';
 }
 
 export interface AuthState {
@@ -24,42 +27,27 @@ export interface SignupFormData {
 export interface LoginFormData {
   email: string;
   password: string;
-  rememberMe: boolean;
+  rememberMe?: boolean;
 }
 
-// user.ts
-export interface UserProfile {
-  id: string;
+export interface AuthResponse {
+  user: User;
+  token: string;
+  refreshToken?: string;
+}
+
+export interface SessionData {
+  token: string;
+  refreshToken?: string;
+  expiresAt: number;
+}
+
+export interface PasswordResetRequest {
   email: string;
-  name: string;
-  avatar?: string;
-  role: 'user' | 'admin';
 }
 
-// forms.ts
-export interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-export interface ChecklistItem {
-  id: string;
-  question: string;
-  checked: boolean;
-}
-
-// common.ts
-export type Theme = 'light' | 'dark';
-
-export interface ApiResponse<T> {
-  success: boolean;
-  data?: T;
-  error?: string;
-}
-
-export interface PaginationParams {
-  page: number;
-  limit: number;
+export interface PasswordReset {
+  token: string;
+  newPassword: string;
+  confirmPassword: string;
 }
