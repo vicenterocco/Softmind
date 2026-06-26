@@ -1,5 +1,3 @@
-// Vraj
-
 import React, { createContext, useReducer, useCallback, useEffect } from 'react';
 import { DEFAULT_THEME, STORAGE_KEYS } from '../utils/constants';
 import type { Theme } from '../types/common';

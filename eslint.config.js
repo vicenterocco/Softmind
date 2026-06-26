@@ -1,5 +1,3 @@
-// Vraj
-
 export default [
   {
     ignores: ['dist', 'node_modules', '.git', '.next'],

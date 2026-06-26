@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react';
 import { Hero } from '../../components/public/Hero';
 import { Section } from '../../components/public/Section';
-import { Card } from '../../components/public/Card';
 import { Input } from '../../components/shared/Input';
-import { ROUTES } from '../../utils/constants';
+import { ROUTES } from '../../constants';
 import { Link } from 'react-router-dom';
 
 const professionals = [
@@ -67,14 +65,14 @@ export function ProfessionalsPage() {
             label="Cidade"
             placeholder="Ex: São Paulo, SP"
             value={searchCity}
-            onChange={e => setSearchCity(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchCity(e.target.value)}
             fullWidth
           />
           <Input
             label="Especialidade"
             placeholder="Ex: Psicólogo, Psiquiatra, Terapeuta"
             value={searchSpecialty}
-            onChange={e => setSearchSpecialty(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchSpecialty(e.target.value)}
             fullWidth
           />
         </div>

@@ -1,5 +1,3 @@
-// Vraj
-
 import { useState, useCallback } from 'react';
 import type { FormError } from '../types/forms';
 

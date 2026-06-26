@@ -1,5 +1,3 @@
-// Vraj
-
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { ChecklistItem, ChecklistResult } from '../../types/forms';

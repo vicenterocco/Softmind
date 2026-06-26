@@ -1,8 +1,7 @@
-import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { Loader } from '../../components/shared/Loader';
-import { ROUTES } from '../../utils/constants';
+import { ROUTES } from '../../constants';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;

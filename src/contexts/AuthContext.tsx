@@ -1,5 +1,3 @@
-// Vraj
-
 import React, { createContext, useReducer, useCallback, useEffect } from 'react';
 import { authService } from '../services/authService';
 import type { User, AuthState, SignupFormData, LoginFormData } from '../types/auth';

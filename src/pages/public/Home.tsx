@@ -1,11 +1,10 @@
-import React from 'react';
 import { Hero } from '../../components/public/Hero';
 import { Section } from '../../components/public/Section';
 import { Card } from '../../components/public/Card';
 import { Stats, type StatItem } from '../../components/public/Stats';
 import { CTAButton } from '../../components/public/CTAButton';
-import { Testimonial, TestimonialGrid, type TestimonialItem } from '../../components/public/Testimonial';
-import { ROUTES } from '../../utils/constants';
+import { TestimonialGrid, type TestimonialItem } from '../../components/public/Testimonial';
+import { ROUTES } from '../../constants';
 
 const stats: StatItem[] = [
   {

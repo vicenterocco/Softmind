@@ -1,14 +1,14 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ToastProvider } from './components/shared/Toast';
 import { Header } from './components/public/Header';
 import { Footer } from './components/public/Footer';
+import { ProtectedRoute } from './pages/auth/ProtectedRoute';
 
 // Pages
-import { ProtectedRoute } from './pages/auth/ProtectedRoute';
 import { Home } from './pages/public/Home';
+import { TestPage } from './pages/public/TestPage';
 import { AboutOniomaniaPage } from './pages/public/AboutOniomaniaPage';
 import { SignalsChecklistPage } from './pages/public/SignalsChecklistPage';
 import { HowItWorksPage } from './pages/public/HowItWorksPage';
@@ -19,7 +19,15 @@ import { ContactPage } from './pages/public/ContactPage';
 import { SignupPage } from './pages/public/SignupPage';
 import { LoginPage } from './pages/public/LoginPage';
 
-import { ROUTES } from './utils/constants';
+// Dashboard Pages
+import { DashboardPage } from './pages/dashboard/DashboardPage';
+import { SpendingPage } from './pages/dashboard/SpendingPage';
+import { AnalysisPage } from './pages/dashboard/AnalysisPage';
+import { AntiImpulsePage } from './pages/dashboard/AntiImpulsePage';
+import { GoalsPage } from './pages/dashboard/GoalsPage';
+import { ProfilePage } from './pages/dashboard/ProfilePage';
+
+import { ROUTES } from './constants';
 
 export function App() {
   return (
@@ -34,6 +42,7 @@ export function App() {
                 <Routes>
                   {/* Public Routes */}
                   <Route path={ROUTES.HOME} element={<Home />} />
+                  <Route path="/test" element={<TestPage />} />
                   <Route path={ROUTES.ABOUT} element={<AboutOniomaniaPage />} />
                   <Route path={ROUTES.CHECKLIST} element={<SignalsChecklistPage />} />
                   <Route path={ROUTES.HOW_IT_WORKS} element={<HowItWorksPage />} />
@@ -49,14 +58,47 @@ export function App() {
                     path={ROUTES.DASHBOARD}
                     element={
                       <ProtectedRoute>
-                        <div className="py-20 text-center">
-                          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                            Dashboard
-                          </h1>
-                          <p className="text-gray-600 dark:text-gray-400 mt-2">
-                            (Em desenvolvimento - breve disponível)
-                          </p>
-                        </div>
+                        <DashboardPage />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/dashboard/gastos"
+                    element={
+                      <ProtectedRoute>
+                        <SpendingPage />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/dashboard/analise"
+                    element={
+                      <ProtectedRoute>
+                        <AnalysisPage />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/dashboard/anti-impulso"
+                    element={
+                      <ProtectedRoute>
+                        <AntiImpulsePage />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/dashboard/metas"
+                    element={
+                      <ProtectedRoute>
+                        <GoalsPage />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/dashboard/perfil"
+                    element={
+                      <ProtectedRoute>
+                        <ProfilePage />
                       </ProtectedRoute>
                     }
                   />

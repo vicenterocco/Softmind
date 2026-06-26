@@ -1,5 +1,3 @@
-// Vraj
-
 export const formatCurrency = (value: number, locale: string = 'pt-BR'): string => {
   return new Intl.NumberFormat(locale, {
     style: 'currency',
@@ -85,7 +83,7 @@ export const getInitials = (name: string): string => {
     .join('');
 };
 
-export const formatTimeAgo = (date: Date | string, locale: string = 'pt-BR'): string => {
+export const formatTimeAgo = (date: Date | string): string => {
   const dateObj = typeof date === 'string' ? new Date(date) : date;
   const now = new Date();
   const seconds = Math.floor((now.getTime() - dateObj.getTime()) / 1000);

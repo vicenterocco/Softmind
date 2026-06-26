@@ -1,6 +1,3 @@
-
-
-import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Hero } from '../../components/public/Hero';
 import { Section } from '../../components/public/Section';
