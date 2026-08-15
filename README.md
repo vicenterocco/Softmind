@@ -1,289 +1,121 @@
-// Vraj
+<div align="center">
 
-# 🎯 SoftMind - Plataforma de Apoio ao Controle de Oniomania
+# SoftMind
 
-## 📋 Sobre o Projeto
+### Apoio para decisões de compra mais conscientes
 
-SoftMind é uma plataforma web especializada em apoio ao controle da oniomania (compulsão por compras). O sistema ajuda usuários a compreender padrões de consumo, reduzir compras impulsivas, controlar gastos e identificar gatilhos emocionais.
+Projeto de TCC • Desenvolvimento de Sistemas • 2026
 
-### ✨ Características Principais
+<br>
 
-- **Dashboard** - Visão completa de gastos e progresso
-- **Análise de Padrões** - Gráficos inteligentes sobre comportamento de compra
-- **Sistema Anti-Impulso** - Ferramentas para evitar compras impulsivas
-- **Metas Financeiras** - Estabeleça e acompanhe objetivos
-- **Diretório de Profissionais** - Conecte-se com especialistas
-- **Comunidade** - Suporte e compartilhamento de experiências
+### [Acessar o SoftMind →](https://www.portfolioeducacionalrgs.com/TCC_2026/DS/softmind/)
+
+</div>
 
 ---
 
-## 🚀 Como Começar
+## Sobre o SoftMind
 
-### Pré-requisitos
+O **SoftMind** é uma plataforma web desenvolvida como projeto de TCC com foco no apoio ao controle de **compras impulsivas e comportamentos relacionados à oniomania**.
 
-- Node.js >= 18.0.0
-- npm ou yarn
+A proposta do projeto é ir além de uma plataforma puramente informativa, oferecendo recursos digitais que incentivem reflexão, organização financeira e maior consciência durante o processo de compra.
 
-### Instalação
-
-1. **Clone o repositório**
-```bash
-git clone https://github.com/vrajlok/softmind.git
-cd softmind
-```
-
-2. **Instale as dependências**
-```bash
-npm install
-```
-
-3. **Configure as variáveis de ambiente**
-```bash
-cp .env.example .env.local
-# Edite .env.local com suas configurações
-```
-
-4. **Inicie o servidor de desenvolvimento**
-```bash
-npm run dev
-```
-
-A aplicação estará disponível em `http://localhost:5173`
+O projeto busca explorar como a tecnologia pode ser utilizada como ferramenta de apoio na identificação de padrões de consumo e na tomada de decisões mais conscientes.
 
 ---
 
-## 📦 Scripts Disponíveis
+## O problema
 
-```bash
-npm run dev          # Inicia servidor de desenvolvimento
-npm run build        # Cria build de produção
-npm run preview      # Visualiza build de produção
-npm run type-check   # Verifica tipos TypeScript
-npm run lint         # Executa linter
-npm test             # Roda testes
-npm test:ui          # Abre interface de testes
-npm test:coverage    # Gera relatório de cobertura
-```
+Compras impulsivas podem ocorrer sem planejamento ou reflexão suficiente e podem estar relacionadas a diferentes fatores emocionais, comportamentais e financeiros.
+
+O SoftMind parte da seguinte questão:
+
+> **Como uma aplicação pode ajudar uma pessoa a perceber seus padrões de consumo antes, durante e depois de uma decisão de compra?**
+
+A partir dessa questão, o projeto foi desenvolvido combinando ferramentas de acompanhamento financeiro, reflexão e análise de comportamento.
 
 ---
 
-## 🏗️ Estrutura do Projeto
+## A proposta
 
-```
-src/
-├── pages/              # Páginas da aplicação
-│   ├── public/        # Páginas públicas (Home, About, etc)
-│   └── auth/          # Páginas de autenticação
-├── components/        # Componentes React
-│   ├── public/        # Componentes públicos (Header, Hero, etc)
-│   ├── forms/         # Componentes de formulário
-│   └── shared/        # Componentes reutilizáveis (Button, Input, etc)
-├── contexts/          # Context API (Auth, Theme)
-├── hooks/             # Custom hooks
-├── services/          # Serviços de API
-├── types/             # Tipos TypeScript
-├── utils/             # Utilitários (validação, formatação, etc)
-├── styles/            # Estilos globais
-├── App.tsx            # Componente raiz
-└── main.tsx           # Ponto de entrada
-```
+O SoftMind procura criar uma experiência de acompanhamento contínuo.
+
+Entre os conceitos explorados pelo projeto estão:
+
+- acompanhamento de gastos;
+- análise de hábitos de consumo;
+- identificação de padrões;
+- reflexão antes de compras;
+- ferramentas anti-impulso;
+- estabelecimento de metas;
+- acompanhamento da evolução do usuário;
+- conteúdos e recursos de apoio.
+
+A intenção é transformar informações que normalmente ficam dispersas em uma visão mais clara sobre o comportamento de consumo.
 
 ---
 
-## 🎨 Design System
+## Experiência
 
-### Cores Principais
+O projeto foi desenvolvido pensando em uma interface:
 
-- **Primary**: Indigo (`#6366f1`)
-- **Secondary**: Pink (`#ec4899`)
-- **Success**: Green (`#10b981`)
-- **Warning**: Amber (`#f59e0b`)
-- **Error**: Red (`#ef4444`)
+- simples;
+- moderna;
+- responsiva;
+- acessível;
+- focada no usuário;
+- adequada ao uso cotidiano.
 
-### Tipografia
-
-- **Font**: Inter (via Google Fonts)
-- **Weights**: 400, 500, 600, 700
-
-### Componentes Base
-
-Todos os componentes seguem o padrão de design definido em `src/components/shared/`:
-
-- `Button` - Botões com variações (primary, secondary, outline, ghost, danger)
-- `Input` - Inputs com validação integrada
-- `Modal` - Modal responsivo com animações
-- `Loader` - Spinner/loader com variações de tamanho
-- `Toast` - Sistema de notificações
+O SoftMind também utiliza uma identidade visual própria baseada principalmente em **tons de roxo**, buscando transmitir uma experiência visual consistente em toda a plataforma.
 
 ---
 
-## 🔐 Segurança
+## Projeto online
 
-- ✅ Proteção contra XSS
-- ✅ Validação frontend com Zod
-- ✅ Sanitização de entradas
-- ✅ Tratamento global de erros
-- ✅ HTTPS em produção
-- ✅ LGPD compliance
+A versão atual do SoftMind está publicada no **Portfólio Educacional da ETEC de Rio Grande da Serra**.
+
+### [www.portfolioeducacionalrgs.com/TCC_2026/DS/softmind](https://www.portfolioeducacionalrgs.com/TCC_2026/DS/softmind/)
 
 ---
 
-## 🧪 Testes
+## Sobre este repositório
 
-O projeto usa **Vitest** + **React Testing Library** para testes.
+Este repositório é utilizado **exclusivamente como apresentação pública do projeto**.
 
-```bash
-# Rodar testes
-npm test
+O código-fonte e os demais arquivos internos do SoftMind não são disponibilizados neste repositório.
 
-# Modo watch
-npm test -- --watch
+Para conhecer o projeto, utilize a versão publicada:
 
-# Com UI
-npm test:ui
-
-# Cobertura
-npm test:coverage
-```
+**[Acessar SoftMind →](https://www.portfolioeducacionalrgs.com/TCC_2026/DS/softmind/)**
 
 ---
 
-## 📱 Responsividade
+## Contexto acadêmico
 
-O projeto é completamente responsivo com suporte para:
-
-- **Mobile**: 320px+
-- **Tablet**: 768px+
-- **Desktop**: 1024px+
-- **Large**: 1280px+
-
-Breakpoints Tailwind: `sm`, `md`, `lg`, `xl`, `2xl`
+**Projeto:** SoftMind  
+**Tipo:** Trabalho de Conclusão de Curso — TCC  
+**Curso:** Ensino Médio Técnico em Desenvolvimento de Sistemas  
+**Instituição:** ETEC de Rio Grande da Serra  
+**Ano:** 2026
 
 ---
 
-## 🌙 Tema Claro/Escuro
+## Observação
 
-O aplicativo suporta tema claro e escuro automaticamente:
+O SoftMind é um projeto educacional e tecnológico de apoio e conscientização.
 
-- Detecta preferência do sistema
-- Pode ser alterado manualmente
-- Persiste em localStorage
-- Usa CSS classes (`dark:*`)
+A plataforma **não substitui avaliação, diagnóstico, tratamento ou acompanhamento realizado por profissionais qualificados**.
 
 ---
 
-## 📡 API Integration
+<div align="center">
 
-A aplicação se conecta a uma API backend via `src/services/api.ts`:
+### SoftMind
 
-```typescript
-// Exemplo de uso
-const response = await apiService.post('/auth/signup', data);
-```
+Tecnologia aplicada à reflexão, organização e decisões mais conscientes.
 
-### Variáveis de Ambiente
+<br>
 
-```
-VITE_API_URL=http://localhost:3000/api
-```
+**[Acessar projeto](https://www.portfolioeducacionalrgs.com/TCC_2026/DS/softmind/)**
 
----
-
-## 🚢 Deploy
-
-### Build para Produção
-
-```bash
-npm run build
-```
-
-Saída em `dist/`
-
-### Plataformas Suportadas
-
-- **Vercel** (recomendado)
-- **Netlify**
-- **GitHub Pages**
-- **AWS Amplify**
-- **Heroku**
-- **Digital Ocean**
-
----
-
-## 📚 Dependências Principais
-
-- **React 18** - UI library
-- **React Router 6** - Roteamento
-- **Tailwind CSS 3** - Estilos
-- **Framer Motion** - Animações
-- **React Hook Form** - Gerenciamento de formulários
-- **Zod** - Validação de schemas
-- **Lucide React** - Icons
-
----
-
-## 📖 Documentação
-
-### Componentes
-
-Todos os componentes estão documentados em suas respectivas pastas:
-
-- `src/components/shared/` - Componentes base
-- `src/components/public/` - Componentes públicos
-- `src/components/forms/` - Componentes de formulário
-
-### Services
-
-- `src/services/api.ts` - Serviço de API
-- `src/services/authService.ts` - Autenticação
-- `src/services/contactService.ts` - Contato
-
-### Hooks
-
-- `useAuth` - Autenticação
-- `useTheme` - Tema
-- `useForm` - Formulários
-
----
-
-## 🤝 Contribuindo
-
-1. Fork o repositório
-2. Crie uma branch (`git checkout -b feature/AmazingFeature`)
-3. Commit as mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
----
-
-## 📝 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
-
----
-
-## 👨‍💻 Autor
-
-**Vicente** - [GitHub](https://github.com/vrajlok)
-
----
-
-## 📞 Suporte
-
-Para suporte, abra uma issue no repositório ou entre em contato através do site.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Dashboard do usuário
-- [ ] Painel administrativo
-- [ ] API Backend
-- [ ] App mobile (React Native)
-- [ ] Integração com psicólogos
-- [ ] Gamificação
-- [ ] ML para análise de padrões
-
----
-
-**Feito com ❤️ por Vicente**
+</div>
